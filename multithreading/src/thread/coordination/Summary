@@ -1,0 +1,24 @@
+/*
+In Java multithreading, the join method is used to make one thread wait
+for the completion of another thread. When you call join on a thread,
+the CALLING THREAD pauses its execution until the thread on which join
+was called has finished executing. This is particularly useful when you
+need to ensure that a thread has completed its task before the calling thread continues its execution.
+
+Benefits
+
+    Synchronization: Ensures that a thread completes its task before another thread starts
+    executing dependent tasks.
+
+    Order of Execution: Helps in controlling the order of execution of multiple threads.
+
+    Using join is a straightforward way to synchronize threads in Java, ensuring that
+    one thread waits for another to complete before proceeding.
+
+ - Do not rely on the order of execution
+ - Always use thread coordination to get reliable results
+ - Always use defensive programming and design code for the worst case scenario
+ - Threads may take unreasonably long time to finish
+ - Always use the Thread.join(...) with a time limit
+ - Stop the thread if it is not done in time
+*/

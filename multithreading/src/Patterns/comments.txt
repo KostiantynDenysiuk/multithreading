@@ -1,0 +1,16 @@
+ChatGPT
+
+The producer-consumer pattern is a common design pattern used in concurrent programming
+to solve the problem of coordinating asynchronous production and consumption of data. In Java,
+
+Key Concepts
+
+Producer: A thread that produces data and puts it into a shared resource (e.g., a queue).
+Consumer: A thread that consumes data from the shared resource.
+Shared Resource: A thread-safe data structure that holds the produced data and from which
+consumers retrieve the data.
+
+Using BlockingQueue:
+Java's java.util.concurrent package provides the BlockingQueue interface, which handles all
+synchronization internally, making the implementation simpler and more robust.
+
